@@ -1,0 +1,76 @@
+2021-12-21 11:29:38.4514|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 12:28:22.4150|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 12:28:52.0606|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 12:34:02.1039|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 12:35:02.9820|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 12:37:43.8286|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 12:41:16.2422|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 12:41:26.6052|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 12:43:19.5368|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 12:47:55.3292|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-21 12:47:58.4369|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 12:48:39.7857|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 12:57:58.3169|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 12:58:27.0472|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 12:58:54.9212|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 12:59:32.3695|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 13:01:49.5677|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 19:41:30.0700|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 19:56:04.0266|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 20:14:00.0279|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 20:14:26.2436|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 20:14:53.8874|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 21:49:00.7306|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-21 21:49:21.9004|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-21 21:49:43.1158|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-21 21:50:04.3292|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-21 21:50:25.5343|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-21 21:51:08.2640|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 22:53:36.6137|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 23:04:51.4136|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 23:04:55.0666|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 23:07:50.0231|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 23:13:39.9045|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 23:18:19.5417|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 23:18:50.0445|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 23:20:31.0263|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 23:21:01.9043|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 23:21:24.9868|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 23:25:20.9504|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-21 23:26:15.0092|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-22 23:14:07.7942|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-22 23:15:26.9452|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-22 23:16:40.4823|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-22 23:16:57.6568|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-22 23:17:04.8002|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-22 23:17:11.9392|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-22 23:17:31.0467|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-22 23:22:30.3365|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-22 23:22:51.5127|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-22 23:23:08.7063|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-22 23:23:30.0789|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-22 23:31:58.8944|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-22 23:32:22.6265|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-22 23:35:13.5170|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-23 17:27:42.9500|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-23 17:28:10.7931|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-23 17:29:04.1347|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-23 17:51:30.1121|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-23 17:52:46.6899|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-23 17:53:36.5561|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-23 17:54:10.9766|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-23 17:54:44.3978|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-23 17:55:05.6178|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-23 17:58:54.5399|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-23 17:59:13.7837|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-23 17:59:44.7197|INFO|ThinkGear.Libraries.Bridge|Device connect fail. Retrying...
+2021-12-23 18:00:15.5965|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-23 18:00:36.9148|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-23 18:01:10.9735|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-23 18:01:51.4886|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-24 10:51:52.1212|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-24 10:52:01.3634|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-24 10:53:33.3229|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-24 11:37:48.6877|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-24 11:48:03.2294|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
+2021-12-24 11:48:35.6175|INFO|ThinkGear.Libraries.Bridge|Device COM9 connected.
