@@ -6,7 +6,7 @@ A project to convert brain waves into a midi signal Ableton Live
 - The neural interface is built on the basis of [NeuroSky TGAM](https://store.neurosky.com/products/eeg-tgam).
 - The project needs [Ableton Live](https://ableton.com/).
 
-1. Connect the neural interface.
+1. Connect the neural interface (connect the power supply and USB receiver to the PC).
 2. Run a **openvibe-acquisition-server**.
 3. Select **NeuroSky MindSet Driver** and open properties.
 4. Make the necessary settings.
