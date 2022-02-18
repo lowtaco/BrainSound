@@ -3,7 +3,7 @@ A project to convert brain waves into a midi signal Ableton Live
 
 # How to use
 - The project is written in openvibe. The first thing you need to do is [download](http://openvibe.inria.fr/downloads/) it.
-- The neurointerface is built on the basis of NeuroSky TGAM.
+- The neurointerface is built on the basis of [NeuroSky TGAM](https://store.neurosky.com/products/eeg-tgam).
 
 1. Connect the neural interface.
 2. Run a **openvibe-acquisition-server**.
