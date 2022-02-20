@@ -1,0 +1,149 @@
+///-------------------------------------------------------------------------------------------------
+/// 
+/// \file CBoxAlgorithm@@ClassName@@.h
+/// \brief Classes of the Box @@BoxName@@.
+/// \author @@Author@@ (@@Company@@).
+/// \version @@Version@@.
+/// \date @@Date@@.
+/// \copyright <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU Affero General Public License v3.0</a>.
+/// 
+///-------------------------------------------------------------------------------------------------
+#pragma once
+
+//You may have to change this path to match your folder organisation
+#include "ovp_defines.h"
+
+#include <openvibe/ov_all.h>
+#include <toolkit/ovtk_all.h>
+
+// The unique identifiers for the box and its descriptor.
+// Identifier are randomly chosen by the skeleton-generator.
+#define OVP_ClassId_BoxAlgorithm_@@ClassName@@			OpenViBE::CIdentifier@@RandomIdentifierClass@@
+#define OVP_ClassId_BoxAlgorithm_@@ClassName@@Desc		OpenViBE::CIdentifier@@RandomIdentifierDescriptor@@
+#define OV_AttributeId_Box_FlagIsUnstable				OpenViBE::CIdentifier(0x666FFFFF, 0x666FFFFF)
+
+namespace OpenViBE
+{
+	namespace Plugins
+	{
+		namespace @@Namespace@@
+		{
+			/// <summary> The class CBoxAlgorithm@@ClassName@@ describes the box @@BoxName@@. </summary>
+			class CBoxAlgorithm@@ClassName@@ final : virtual public Toolkit::TBoxAlgorithm<IBoxAlgorithm>
+			{
+			public:
+				void release() override { delete this; }
+
+				bool initialize() override;
+				bool uninitialize() override;
+
+				//Here is the different process callbacks possible
+				// - On clock ticks :
+				@@ProcessClockComment@@bool processClock(Kernel::CMessageClock& msg) override;		
+				// - On new input received (the most common behaviour for signal processing) :
+				@@ProcessInputComment@@bool processInput(const size_t index) override;
+
+				// If you want to use processClock, you must provide the clock frequency.
+				@@ProcessClockComment@@uint64_t getClockFrequency() override;
+
+				bool process() override;
+
+				// As we do with any class in openvibe, we use the macro below to associate this box to an unique identifier. 
+				// The inheritance information is also made available, as we provide the superclass Toolkit::TBoxAlgorithm < IBoxAlgorithm >
+				_IsDerivedFromClass_Final_(Toolkit::TBoxAlgorithm<IBoxAlgorithm>, OVP_ClassId_BoxAlgorithm_@@ClassName@@)
+
+			protected:
+				@@Algorithms@@
+			};
+
+
+			// If you need to implement a box Listener, here is a sekeleton for you.
+			// Use only the callbacks you need.
+			// For example, if your box has a variable number of input, but all of them must be stimulation inputs.
+			// The following listener callback will ensure that any newly added input is stimulations :
+			/*		
+			bool onInputAdded(Kernel::IBox& box, const size_t index) override 
+			{
+				box.setInputType(index, OV_TypeId_Stimulations);
+			};
+			*/
+
+			@@BoxListenerCommentIn@@
+			// The box listener can be used to call specific callbacks whenever the box structure changes : input added, name changed, etc.
+			// Please uncomment below the callbacks you want to use.
+			/// <summary> Listener of the box @@BoxName@@. </summary>
+			class CBoxAlgorithm@@ClassName@@Listener final : public Toolkit::TBoxListener<IBoxListener>
+			{
+			public:
+
+				//bool onInitialized(Kernel::IBox& box) override { return true; };
+				//bool onNameChanged(Kernel::IBox& box) override { return true; };
+				@@BoxListenerOnInputConnectedComment@@bool onInputConnected(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnInputDisconnectedComment@@bool onInputDisconnected(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnInputAddedComment@@bool onInputAdded(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnInputRemovedComment@@bool onInputRemoved(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnInputTypeChangedComment@@bool onInputTypeChanged(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnInputNameChangedComment@@bool onInputNameChanged(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnOutputConnectedComment@@bool onOutputConnected(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnOutputDisconnectedComment@@bool onOutputDisconnected(Kernel::IBox& box, const size_t index) { return true; };
+				@@BoxListenerOnOutputAddedComment@@bool onOutputAdded(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnOutputRemovedComment@@bool onOutputRemoved(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnOutputTypeChangedComment@@bool onOutputTypeChanged(Kernel::IBox& box, const size_t index) override override { return true; };
+				@@BoxListenerOnOutputNameChangedComment@@bool onOutputNameChanged(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnSettingAddedComment@@bool onSettingAdded(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnSettingRemovedComment@@bool onSettingRemoved(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnSettingTypeChangedComment@@bool onSettingTypeChanged(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnSettingNameChangedComment@@bool onSettingNameChanged(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnSettingDefaultValueChangedComment@@bool onSettingDefaultValueChanged(Kernel::IBox& box, const size_t index) override { return true; };
+				@@BoxListenerOnSettingValueChangedComment@@bool onSettingValueChanged(Kernel::IBox& box, const size_t index) override { return true; };
+
+				_IsDerivedFromClass_Final_(Toolkit::TBoxListener<IBoxListener>, CIdentifier::undefined())
+			};
+			@@BoxListenerCommentOut@@
+
+			/// <summary> Descriptor of the box @@BoxName@@. </summary>
+			class CBoxAlgorithm@@ClassName@@Desc final : virtual public IBoxAlgorithmDesc
+			{
+			public:
+
+				void release() override { }
+
+				CString getName() const override { return CString("@@BoxName@@"); }
+				CString getAuthorName() const override { return CString("@@Author@@"); }
+				CString getAuthorCompanyName() const override { return CString("@@Company@@"); }
+				CString getShortDescription() const override { return CString("@@ShortDescription@@"); }
+				CString getDetailedDescription() const override { return CString("@@DetailedDescription@@"); }
+				CString getCategory() const override { return CString("@@Category@@"); }
+				CString getVersion() const override { return CString("@@Version@@"); }
+				CString getStockItemName() const override { return CString("@@StockItemName@@"); }
+
+				CIdentifier getCreatedClass() const override { return OVP_ClassId_BoxAlgorithm_@@ClassName@@; }
+				IPluginObject* create() override { return new CBoxAlgorithm@@ClassName@@; }
+
+				@@BoxListenerCommentIn@@
+				IBoxListener* createBoxListener() const override { return new CBoxAlgorithm@@ClassName@@Listener; }
+				void releaseBoxListener(IBoxListener* listener) const override { delete listener; }
+				@@BoxListenerCommentOut@@
+				bool getBoxPrototype(Kernel::IBoxProto& prototype) const override
+				{
+					@@Inputs@@
+					@@InputFlagCanModify@@
+					@@InputFlagCanAdd@@
+
+					@@Outputs@@
+					@@OutputFlagCanModify@@
+					@@OutputFlagCanAdd@@
+
+					@@Settings@@
+					@@SettingFlagCanModify@@
+					@@SettingFlagCanAdd@@
+
+					prototype.addFlag(OV_AttributeId_Box_FlagIsUnstable);
+
+					return true;
+				}
+				_IsDerivedFromClass_Final_(IBoxAlgorithmDesc, OVP_ClassId_BoxAlgorithm_@@ClassName@@Desc)
+			};
+		}  // namespace @@Namespace@@
+	}  // namespace Plugins
+}  // namespace OpenViBE
